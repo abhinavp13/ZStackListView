@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="#3D404D"
+    android:elevation="12dp"
+    android:layout_gravity="center"
+    android:layout_height="72dp">
+
+    <TextView
+        android:id="@+id/name_plate_text_view"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_margin="11dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text = "Z" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/name_plate_text_view"
+        android:layout_toEndOf="@+id/name_plate_text_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:gravity="start"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zlatan Ibrahimovic"
+            android:textSize="20sp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/darker_gray"
+            android:text= "Paris" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_passed_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:text = "5min ago"
+        android:textSize="12sp"
+        android:layout_margin="14dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+
+
+    <!--&lt;!&ndash; Artificial divider among recycler view tiles &ndash;&gt;-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0.1dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="#50535e"-->
+        <!--android:elevation="5dp"-->
+        <!--/>-->
+</RelativeLayout>
